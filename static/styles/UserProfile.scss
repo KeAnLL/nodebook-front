@@ -1,0 +1,134 @@
+$button-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+$profile-surround-size: 20px;
+
+.profile-container {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 82vh;
+  width: 100%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.profile-title {
+  text-align: center;
+  padding-top: 20px;
+  margin: 0px;
+}
+
+td {
+  // padding-top: 5px;
+  // padding-bottom: 5px;
+}
+
+.profile-form-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.profile-form-container {
+  height: fit-content;
+  width: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2),
+    0 18px 60px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profile-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $profile-surround-size;
+}
+
+.profile-form-input {
+  font-family: inherit;
+  font-size: 1.1rem;
+  background: transparent;
+  border-radius: 5px;
+  height: 2rem;
+  border-style: solid;
+}
+
+.profile-form-input:focus {
+  border-color: black;
+}
+
+.profile-form-label {
+  font-size: 18px;
+  color: black;
+  padding-right: 15px;
+}
+
+.radio-grp {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-form-radio-label {
+  font-size: 18px;
+  color: black;
+}
+
+.profile-form-radio {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 8px;
+}
+
+input[type="radio"] {
+  margin-bottom: 4px;
+  vertical-align: middle;
+}
+
+.inschool-switch {
+  padding: 5px;
+  width: fit-content;
+}
+
+.inschool-icon {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.upload-image {
+  width: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+.preview-img {
+  max-width: 240px;
+  max-height: 240px;
+  margin: 20px;
+  padding: 0;
+}
+
+#button-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button {
+  height: 5vh;
+  width: 12vw;
+  min-width: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  box-shadow: $button-box-shadow;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.submit-button:active {
+  color: black;
+  background-color: white;
+}

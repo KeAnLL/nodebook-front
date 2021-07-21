@@ -1,0 +1,135 @@
+$user-surround-size: 20px;
+$button-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+
+$form-height: 450px;
+$form-width: 400px;
+
+.user-container {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92vh;
+  width: 100%;
+}
+
+.user-title {
+  text-align: center;
+  padding-top: 20px;
+}
+
+td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.user-form-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.user-form-outbox {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2),
+    0 18px 60px 0 rgba(0, 0, 0, 0.19);
+}
+
+.user-form-container {
+  height: $form-height;
+  width: $form-width;
+  background-color: white;
+}
+
+.uf-container-left {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.uf-container-right {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.user-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $user-surround-size;
+}
+
+.user-form-input {
+  font-family: inherit;
+  font-size: 1.1rem;
+  background: transparent;
+  border-radius: 5px;
+  height: 2rem;
+  border-style: solid;
+}
+
+.user-form-input:focus {
+  border-color: black;
+}
+
+.user-form-label {
+  top: 0;
+  font-size: 18px;
+  color: black;
+  padding-right: 10px;
+  display: inline-block;
+  padding-bottom: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+  .uf-container-right {
+    display: none;
+  }
+
+  .user-form-container {
+    border-radius: 10px;
+  }
+}
+
+.user-form-line {
+  font-size: 15px;
+}
+
+#button-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button {
+  height: 5vh;
+  width: 12vw;
+  min-width: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  box-shadow: $button-box-shadow;
+}
+
+.submit-button:active {
+  color: black;
+  background-color: white;
+}
+
+.reset-button {
+  height: 5vh;
+  width: 6vw;
+  min-width: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow: $button-box-shadow;
+}
+
